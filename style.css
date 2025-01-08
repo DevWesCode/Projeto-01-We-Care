@@ -1,0 +1,259 @@
+* {
+    font-family: "Montserrat", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 44px 0 144px 76px;
+}
+
+.link-header {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #989d9c;
+    cursor: pointer;
+    margin-right: 23px;
+}
+
+.link-header:hover {
+    color: #4e5352;
+}
+
+.logo-image {
+    width: 568px;
+    height: 500px;
+    margin-left: 125px;
+    display: inline-block
+}
+
+#login-button {
+    width: 130px;
+    height: 41px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #989d9c;
+    cursor: pointer;
+    background-color: #665AE1;
+    color: #ffffff;
+    border: none;
+}
+
+#login-button:hover {
+    background-color: #a8a3df;
+}
+
+#login-button:active{
+    background-color: #4133df;
+}
+
+
+section {
+display: inline-block;
+margin-left: 86px;
+}
+
+h1 {
+font-weight: 900;
+font-size: 100px;
+line-height: 122px;
+color: #515151;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 70.7px;
+    color: #515151;
+}
+
+p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #848484;
+    width: 600px;
+    margin-top: 20px;
+    margin-bottom: 65px;
+}
+
+#explore-button {
+    width: 239px;
+    height: 64px;
+    border-radius: 50px;
+    background-color: #adff00;
+    border: none;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34.13px;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px #000);
+}
+
+#explore-button:hover {
+    background-color: #a6e224;
+}
+
+#explore-button:active {
+  background-color: #8aca00;
+}
+
+/* Ícone do menu hambúrguer */
+.menu-icon {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: #989d9c;
+}
+
+/* Oculta o menu em telas pequenas */
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+/* Media query para telas pequenas */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        padding: 10px;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 200px;
+        border-radius: 8px;
+    }
+
+    .menu a,
+    .menu button {
+        margin: 10px 0;
+        color: white;
+        text-align: center;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}
+
+
+/*Responsividade para telas pequenas*/
+
+/* Para telas menores que 768px (tablets e celulares em modo paisagem) */
+
+@media (max-width: 768px) {
+    header {
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+
+    .link-header {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    #login-button {
+        width: 100px;
+        height: 35px;
+        font-size: 18px;
+        margin-left: 42px;
+    }
+
+    .logo-image {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    section {
+        
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin-bottom: -10px;
+    }
+
+    h2 {
+        font-size: 42px;
+        margin: -10px;
+    }
+
+    p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    #explore-button {
+        width: 180px;
+        height: 50px;
+        font-size: 22px;
+    }
+}
+
+/* Para telas menores que 480px (celulares) */
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: end;
+        margin: 10px;
+    }
+
+    .link-header {
+        margin: 5px 0;
+    }
+
+    .logo-image {
+        width: 80%;
+        height: auto;
+       margin-left: 35px;
+       
+    }
+
+    section {
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin-bottom: -10px;
+    }
+
+    h2 {
+        font-size: 42px;
+        margin: -10px;
+    }
+
+    p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    #login-button {
+        width: 100px;
+        height: 35px;
+        font-size: 18px;
+        margin-left: 42px;
+    }
+
+    #explore-button {
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+    
+    }
+}
