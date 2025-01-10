@@ -38,17 +38,17 @@ header {
     line-height: 29.26px;
     color: #989d9c;
     cursor: pointer;
-    background-color: #665AE1;
+    background-color: #be6007;
     color: #ffffff;
     border: none;
 }
 
 #login-button:hover {
-    background-color: #a8a3df;
+    background-color: #cf8642;
 }
 
 #login-button:active{
-    background-color: #4133df;
+    background-color: #b95d07;
 }
 
 
@@ -85,7 +85,7 @@ p {
     width: 239px;
     height: 64px;
     border-radius: 50px;
-    background-color: #adff00;
+    background-color: #be6007;
     border: none;
     font-weight: 700;
     font-size: 28px;
@@ -95,11 +95,11 @@ p {
 }
 
 #explore-button:hover {
-    background-color: #a6e224;
+    background-color: #e29024;
 }
 
 #explore-button:active {
-  background-color: #8aca00;
+  background-color: #be6007;
 }
 
 /* Ícone do menu hambúrguer */
