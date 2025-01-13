@@ -16,7 +16,49 @@ header {
     color: #989d9c;
     cursor: pointer;
     margin-right: 23px;
+    text-decoration: none;
 }
+
+/* Estilos básicos */
+
+
+
+
+/* Estilo do submenu */
+.dropdown {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    width: 200px;
+}
+
+.submenu li {
+    padding: 0.5rem;
+}
+
+.submenu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    background-color: #444;
+}
+
+/* Exibir o submenu */
+.dropdown.active .submenu {
+    display: block;
+}
+
 
 .link-header:hover {
     color: #4e5352;
@@ -47,21 +89,21 @@ header {
     background-color: #cf8642;
 }
 
-#login-button:active{
+#login-button:active {
     background-color: #b95d07;
 }
 
 
 section {
-display: inline-block;
-margin-left: 86px;
+    display: inline-block;
+    margin-left: 86px;
 }
 
 h1 {
-font-weight: 900;
-font-size: 100px;
-line-height: 122px;
-color: #515151;
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 122px;
+    color: #515151;
 }
 
 h2 {
@@ -99,7 +141,7 @@ p {
 }
 
 #explore-button:active {
-  background-color: #be6007;
+    background-color: #be6007;
 }
 
 /* Ícone do menu hambúrguer */
@@ -178,7 +220,7 @@ p {
     }
 
     section {
-        
+
         text-align: center;
     }
 
@@ -220,8 +262,8 @@ p {
     .logo-image {
         width: 80%;
         height: auto;
-       margin-left: 35px;
-       
+        margin-left: 35px;
+
     }
 
     section {
@@ -254,6 +296,10 @@ p {
         width: 150px;
         height: 50px;
         font-size: 20px;
-    
+
+    }
+
+    .dropdown {
+        text-align: center;
     }
 }

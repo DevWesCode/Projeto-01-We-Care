@@ -18,7 +18,16 @@
         <div class="menu" id="menu">
             <a class="link-header">Home</a>
             <a class="link-header">About</a>
-            <a class="link-header">Product</a>
+            <div class="dropdown">
+                <a href="#" class="link-header" onclick="toggleSubmenu(event)">Product</a>
+                <ul class="submenu">
+                    <li><a href="#">Shampoo e Condicionador</a></li>
+                    <li><a href="#">Escovas e Pentes</a></li>
+                    <li><a href="#">Rações</a></li>
+                    <li><a href="#">Antipulgas e Carrapatos</a></li>
+                    <li><a href="#">Brinquedos Interativos</a></li>
+                </ul>
+            </div>
             <a class="link-header">Service</a>
             <a class="link-header">Contact</a>
             <button id="login-button">Login</button>
